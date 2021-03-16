@@ -1,5 +1,6 @@
 /* Дано любое натуральное 4-х значное число. Верно ли, что все цифры числа
 различны? */
+
 import java.util.Scanner;
 
 public class DifferentTask5 {
@@ -10,18 +11,18 @@ public class DifferentTask5 {
         String numberStr = "" + number;
         int i = 0;
         int j = 0;
-        int count = 0;
-            while(i < numberStr.length()){
-                while(j < numberStr.length()){
-                    if (numberStr.charAt(i) == numberStr.charAt(j) && i != j){
-                        count++;
-                    }
-                    j++;
+        boolean chek = false;
+        while (i < numberStr.length()) {
+            while (j < numberStr.length()) {
+                if (numberStr.charAt(i) == numberStr.charAt(j) && i != j) {
+                    chek = true;
                 }
-                i++;
-                j = 0;
+                j++;
             }
-        if (count >0) {
+            i++;
+            j = 0;
+        }
+        if (chek == true) {
             System.out.println("В вашем числе есть одинаковые числа!");
         } else {
             System.out.println("В вашем числе нет одинаковых чисел!");
