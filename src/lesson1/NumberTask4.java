@@ -9,9 +9,7 @@ public class NumberTask4 {
         int number = scannerNumber.nextInt();
         String numberStr = "" + number;
         System.out.println("Ваше число в обратном порядке: ");
-        System.out.print(numberStr.charAt(3));
-        System.out.print(numberStr.charAt(2));
-        System.out.print(numberStr.charAt(1));
-        System.out.print(numberStr.charAt(0));
+        for(int i = numberStr.length() - 1; i >= 0; i--)
+        System.out.print(numberStr.charAt(i));
     }
 }
