@@ -8,13 +8,15 @@ public class WeekDayHourTask3 {
         int s = 4500;
         int min = s / 60;
         int sec = s % 60;
-        System.out.println("В 4500 секундах содержится: \n " + min + " минут и " + sec + " секунд.");
+        System.out.println("В " + s + " секундах содержится: \n" + min + " минут(ы) и " + sec + " секунд(ы).");
         int h = min / 60;
         int min1 = min % 60;
-        System.out.println(h + " час " + min1 + " минут и " + sec + " секунд.");
+        System.out.println(h + " час(а) " + min1 + " минут(ы) и " + sec + " секунд(ы).");
         int day = h / 24;
-        System.out.println(day + " дней " + h + " час " + min1 + " минут и " + sec + " секунд.");
+        int h1 = h % 24;
+        System.out.println(day + " дня(ей) " + h1 + " час(а) " + min1 + " минут(а) и " + sec + " секунд(ы).");
         int week = day / 7;
-        System.out.println(week + " недель " + day + " дней " + h + " час " + min1 + " минут и " + sec + " секунд.");
+        int day1 = day % 7;
+        System.out.println(week + " недель(и) " + day + " дня(ей) " + h1 + " час(а) " + min1 + " минут(ы) и " + sec + " секунд(ы).");
     }
 }
